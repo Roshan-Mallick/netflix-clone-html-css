@@ -1,0 +1,434 @@
+/* ========== GLOBAL RESET & BASE STYLES ========== */
+
+* {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+
+/* ========== HERO SECTION ========== */
+
+/* Background with gradient overlay on image */
+.hero-section {
+  height: 125vh;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.4)),
+                    url("assets/Netflix-Background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+
+/* ========== NAVIGATION BAR ========== */
+
+.nav-bar {
+  height: 60px;
+  width: 100%;
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: transparent;
+}
+
+/* Netflix logo positioning */
+.netflix-logo {
+  background-image: url(assets/netflix.svg-removebg-preview.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 65px;
+  width: 163px;
+  margin-left: 120px;
+}
+
+/* Right side: language selector & sign-in button */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-right: 150px;
+}
+
+
+/* ========== LANGUAGE SELECTOR ========== */
+
+.lang-border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 90px;
+  padding: 5px 15px;
+  font-size: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+  border-radius: 4px;
+}
+
+.language-dropdown {
+  font-size: 1rem;
+  background: transparent;
+  color: white;
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+
+/* ========== SIGN IN BUTTON ========== */
+
+.Sign {
+  color: white;
+  background-color: red;
+  font-size: 1rem;
+  font-weight: 600;
+  height: 43px;
+  width: 90px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* ========== HERO CONTENT ========== */
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  text-align: center;
+  padding: 0 20px;
+  font-size: 1.7rem;
+}
+
+/* Email form input & button */
+.email-form {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+  
+}
+
+.email-form input {
+  padding: 12px;
+  font-size: 1rem;
+  width: 400px;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  background-color: rgba(81, 80, 80, 0.6);
+  color: white;
+}
+
+.email-form input:active {
+   border: 2px solid grey;
+
+} 
+
+
+
+.email-form button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+/* ========== MAIN SECTION ========== */
+
+/* Decorative curve divider */
+.curve-devider {
+  background-color: black;
+  height: 150px;
+  width: 100%;
+  border-radius: 100% 100% 0 0;
+  position: absolute;
+  bottom: -190px;
+  border-top: 5px solid rgb(255, 0, 111);
+  z-index: 2;
+
+}
+
+.main-body {
+  padding-top: 20px;
+}
+
+
+/* ========== TRENDING SECTION ========== */
+
+.trend {
+  padding-left: 260px;
+  font-size: 1rem;
+}
+
+.trending {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Scroll buttons */
+.trending button {
+  height: 200px;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(45, 44, 44);
+}
+
+.trending button:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+  border: 2px solid grey;
+}
+
+/* Trending movie thumbnails */
+.movie-card {
+  height: 252px;
+  width: 182px;
+  border-radius: 4px;
+  border: 2px solid transparent;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+  border: 2px solid grey;
+}
+
+/* Specific movie posters */
+.trending1 {
+  background-image: url(assets/squid_game.jpg);
+  background-size: cover;
+}
+
+.trending2 {
+  background-image: url(assets/Alice_in_borderland.png);
+  background-size: cover;
+}
+
+.trending3 {
+  background-image: url(assets/Death_note.jpg);
+  background-size: cover;
+}
+
+.trending4 {
+  background-image: url(assets/money_heist.jpg);
+  background-size: cover;
+}
+
+
+/* ========== WHY JOIN SECTION ========== */
+
+.reason {
+  padding-top: 100px;
+  padding-left: 260px;
+  font-size: 1rem;
+}
+
+.written-info {
+  display: flex;
+  gap: 15px;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+/* Individual feature box */
+.feature {
+  height: 250px;
+  width: 210px;
+  background-color: #5319FB;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+}
+
+/* Feature icon position */
+.reason-logo {
+  position: relative;
+  font-size: 50px;
+  margin-top: -85px;
+  margin-left: 170px;
+}
+
+/* Text inside feature box */
+.feature-info {
+  height: 170px;
+  width: 200px;
+  background-color: #5319FB;
+  margin-top: 10px;
+  color: white;
+}
+
+
+/* ========== FOOTER SECTION ========== */
+
+/* FAQ header */
+.faq-heading {
+  padding-top: 50px;
+  padding-bottom: 20px;
+  padding-left: 260px;
+  font-size: 1rem;
+}
+
+/* FAQ section */
+.faq {
+  width: 66%;
+  margin: auto;
+  background-color: transparent;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.faq-item {
+  margin: 10px 0;
+}
+
+.faq-question {
+  background-color: #2d2d2d;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+}
+
+
+/* Email CTA section */
+.invite-message {
+  padding-top: 100px;
+  padding-left: 35%;
+  font-size: 0.70rem;
+}
+
+.footer-email-form {
+  display: flex;
+  margin-top: 20px;
+  gap: 10px;
+  margin-left: 33%;
+}
+
+.footer-email-form input {
+  padding: 12px;
+  font-size: 1rem;
+  width: 400px;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  background-color: rgba(81, 80, 80, 0.6);
+  color: white;
+}
+
+.footer-email-form input:active {
+
+  border: 2px solid grey;
+
+}
+
+.footer-email-form button {
+  padding: 12px 20px;
+  font-size: 1rem;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+
+/* Footer bottom section */
+.end-footer {
+  margin-top: 40px;
+  margin-left: 15%;
+  background-color: #000;
+  color: #757575;
+  padding: 40px;
+  font-weight: 700;
+  font-size: 14px;
+  
+}
+
+a {
+  text-decoration: none;
+}
+
+.footer-contact {
+  margin-bottom: 25px;
+}
+
+.footer-contact a {
+  color: #757575;
+  text-decoration: underline;
+}
+
+/* Footer links in grid */
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 12px;
+}
+
+.footer-links a {
+  color: #757575;
+  text-decoration: underline;
+  font-size: 13px;
+}
+
+
+/* Language selector in footer */
+.language-select {
+  margin-bottom: 20px;
+}
+
+.language-select select {
+  background-color: #000;
+  color: #fff;
+  padding: 8px 14px;
+  border: 1px solid #333;
+  border-radius: 4px;
+}
+
+/* Footer meta info */
+.netflix-region {
+  margin-bottom: 10px;
+  color: #757575;
+}
+
+.captcha-note {
+  font-size: 12px;
+  color: #757575;
+  max-width: 450px;
+}
+
+.captcha-note a {
+  color: #0071eb;
+  text-decoration: underline;
+}
