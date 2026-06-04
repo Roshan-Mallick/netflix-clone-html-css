@@ -1,3 +1,6 @@
+
+Netflix homepage clone using HTML & CSS — Live: https://roshan-mallick-netfli.netlify.app/
+
 # 🎬 Netflix Clone (HTML & CSS Only)
 
 This is a **static clone** of the Netflix homepage built using **pure HTML and CSS**. It is created strictly for **educational purposes** to practice frontend development skills.
